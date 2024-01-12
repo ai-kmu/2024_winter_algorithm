@@ -5,9 +5,9 @@
 3. 이름 branch에서 파일 내용 바꾸기
 4. main에서 파일 수정
 
-5. main과 이름 merge (충돌 해결하기)
+5. main과 이름 merge (충돌 해결하기) 
 
-6. main에서 파일 수정
+6. main에서 파일 수정                   *(권장. sorcetree확인해보기!)
 7. 이름에서 파일 수정(commit 잊지말기)
 
 result:
