@@ -34,13 +34,12 @@ def merge(left, right):
 
     return result
 
+
 class Solution(object):
-    
     def arrangeWords(self, text):
         x = merge_sort(text.split())
-        return(" ".join(x).capitalize())
+        return " ".join(x).capitalize()
         """
         :type text: str
         :rtype: str
         """
-        
