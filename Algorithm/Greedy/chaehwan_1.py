@@ -7,7 +7,7 @@ class Solution(object):
         g_len = len(g)
         s_len = len(s)
         i, j = 0, 0
-        while i < g_len and j < s_len:
+        while j < s_len and i < g_len:
             if g[i] <= s[j]:
                 cnt += 1
                 i += 1
