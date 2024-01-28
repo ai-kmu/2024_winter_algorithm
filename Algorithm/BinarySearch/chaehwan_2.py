@@ -19,6 +19,7 @@ class Solution(object):
         cnt = 0
         print(nums)
         if size >= 3 and nums[0] == nums[-1]:
+            #이거 안하면 400 여러개인 테캐 통과 못함
             return size * (size - 1) * (size - 2) / 6
         for i in range(size - 2):
             first = nums[i]
