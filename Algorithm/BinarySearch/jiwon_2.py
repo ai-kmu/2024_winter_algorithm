@@ -23,3 +23,11 @@ class Solution:
                 cnt += (right - j)
 
         return cnt
+
+"""
+Line 12-23까지를 아래 코드로 대체 가능함
+이 경우에는 from bisect import bisect_left 추가 필요
+
+index = bisect_left(nums, tmp, j + 1)
+cnt += (index - (j + 1))
+"""
