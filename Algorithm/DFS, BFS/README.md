@@ -6,4 +6,4 @@
 
 2. https://leetcode.com/problems/minesweeper/description/
 
-지뢰찾기게임를을 만드는 문제
+지뢰찾기게임을 만드는 문제

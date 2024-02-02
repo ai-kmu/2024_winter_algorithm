@@ -3,7 +3,8 @@ LeetCode
 129. Sum Root to Leaf Numbers
 (https://leetcode.com/problems/sum-root-to-leaf-numbers/description/)
 
-tree의 root부터 leaf까지의 수를 
+tree의 root부터 leaf까지의 값을 일정한 규칙으로 치환한 후 값의 합을 구함.
+
 가령 1(root) -> 2-> 3(leaf) 라면 123 과 같은 방식으로 수로 치환한 후 
 가능한 모든 root -(...)-> leaf를 치환하여 얻은 값들의 합을 구함.
 
@@ -44,7 +45,7 @@ class Solution(object):
     #===============
     """
     :input: TreeNode node(현재 탐색중인 node)
-    :rtype: bool (현재 node의 leaf 여부)
+    :output: bool (현재 node의 leaf 여부)
 
     :설명: 주어진 node(TreeNode node)가 tree의 leaf인지 판정하는 함수
     """
@@ -56,7 +57,7 @@ class Solution(object):
             return True
 
     """
-    :type root: list stack (tree의 root부터 leaf까지의 값을 저장한 stack)
+    :input: list stack (tree의 root부터 leaf까지의 값을 저장한 stack)
     :output: int result(주어진 stack을 통해 얻은 값)
 
     :설명: 주어진 stack(list stack)을 통해 root값부터 leaf값까지의 수를 
