@@ -1,5 +1,5 @@
 - git rebase -i
-- 
+  
      1) 파일 아무거나 만들고 commit 하기 1 (commit message : commit 1)
   
      2) 파일 아무거나 만들고 commit 하기 2 (commit message : commit 4)
