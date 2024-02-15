@@ -19,11 +19,9 @@ class Solution:
             return board
 
         q.append((x, y))
-        print(ox)
         while q:
             cnt = 0
             x, y = q.popleft()
-            print(x, y)
             ox[x][y] = 1
 
             if board[x][y] == "E":
