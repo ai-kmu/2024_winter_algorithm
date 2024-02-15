@@ -41,7 +41,7 @@ class Solution(object):
         :output: list[][] board (현재 click위치에 대한 상태값이 변경된 board)
 
         :설명: board의 값을 탐색하여 click에 대한 적절한 board의 상태값을 return하는 함수
-            bfs방식 사용
+            dfs방식 사용
     """
     def updateBoard(self, board, click):
 
