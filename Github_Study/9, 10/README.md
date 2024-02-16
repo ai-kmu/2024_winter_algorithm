@@ -1,4 +1,4 @@
-  1.  git-branch 파일 다운 후 root branch의 Potato 파일 Cherry-pick하고 소스트리 캡처해서 올리기
+1.  git-branch 파일 다운 후 root branch의 Potato 파일 Cherry-pick하고 소스트리 캡처해서 올리기
   
   2.  squash 명령어 사용하여 citrus branch를 main에 merge 후 소스트리 캡처해서 올리기
   
