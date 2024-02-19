@@ -8,7 +8,6 @@ class Solution:
     def networkDelayTime(self, times: List[List[int]], n: int, k: int) -> int:
 
         # 디폴트가 list인 딕셔너리 생성
-        # 리스트의 존재 유무와 무관하게 우선 dictionary를 생성해줌
         graph = defaultdict(list)
 
         # 그래프 작성 - key: 출발지, value: (도착지, time)
