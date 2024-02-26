@@ -1,6 +1,11 @@
 #wrong answer 훈수 환영 ;-D
 
 class Solution(object):
+
+# ===
+# sub
+# ===
+
     def kruskal(self, exI, edges, n):
         edges.sort(key = lambda x : x[2])
         visit = set()
@@ -14,7 +19,8 @@ class Solution(object):
             visit.update(e[:2])
             edgeUsed.append(i)
             result += e[2]
-        if len(edgeUsed) < n-1:
+
+        if len(edgeUsed) < n-1:  # 간선이 덜 이어진채 모든 node가 연결됐을때
             tmp1 = []
             for i in range(len(edges)):
                 if i not in edgeUsed:
@@ -25,10 +31,16 @@ class Solution(object):
 
         return result, edgeUsed
 
+
+# ===
+# main
+# ===
+
     def findCriticalAndPseudoCriticalEdges(self, n, edges):
         result = [[],[]]
-        mstWithAll = self.kruskal(-1,edges, n)[0]
+        mstWithAll = self.kruskal(-1,edges, n)[0]  # 모든 값이 있을때 결과
 
+        # 각 간선이 빠졌을때 결과 수집 (list mst)
         mst = []
         edgeuseds = set()
         for i in range(len(edges)):
@@ -37,15 +49,18 @@ class Solution(object):
             edgeuseds.update(edgeused)
 
         
+        # critical
         print(mstWithAll)
         for i, val in enumerate(mst):
             if val > mstWithAll:
                 result[0].append(i)
 
 
+        # PCritical
         tmp = set(result[0])        
         result[1] = list(edgeuseds.difference(tmp))
+
         print(mst)
         return result
-        
+
         
