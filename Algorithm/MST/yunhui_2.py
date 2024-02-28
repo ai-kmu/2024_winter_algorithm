@@ -1,3 +1,6 @@
+#미완성 코드 입니다 ㅜ.ㅜ
+#UnionFind 함수까지 작성
+
 class UnionFind:
     def __init__(self, n):
         self.p = list(range(n))
