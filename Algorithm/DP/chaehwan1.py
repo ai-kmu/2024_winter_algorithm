@@ -1,3 +1,4 @@
+#1번째 풀이
 class Solution(object):
     def rob(self, nums):
         dp = [0 for _ in range(len(nums))]
@@ -14,6 +15,15 @@ class Solution(object):
             return max(dp[-1], dp[-2])
         else:
             return dp[0]
+____________________________________________________________________
+#2 두번쨰 풀이
+class Solution(object):
+    def rob(self, nums):
+        odd, even = 0, 0
+        for num in nums:
+            odd, even = even, max(num + odd, even)
+        return even
+        
         
 
 
